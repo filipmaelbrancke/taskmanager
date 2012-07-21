@@ -35,17 +35,11 @@
 	    @form(routes.Application.newTask(), 'class -> "well form-horizontal") {
 	        @inputText(taskForm("label")) 
 	        
+	        <div class="controls">
 	        <input type="submit" value="Create" class="btn btn-primary">
+	        </div>
 	    }
 
-		@*
-        @helper.form(action = routes.Application.addTask(), 'class -> "well form-horizontal") {
-            @helper.inputText(taskForm("contents"), '_label -> "Contents")
-            <div class="controls">
-                <input type="submit" class="btn btn-primary"/>
-            </div>
-        }
-        *@
     </div>
     
 }
